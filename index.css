@@ -1,0 +1,2695 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    color: #737881;
+    text-decoration: none;
+}
+
+body {
+    background: #F5F5F5;
+    color: #737881;
+    font: 12px malgun gothic;
+}
+
+/* header */
+
+#header {
+    width:100%;
+    height:63px;
+    position:relative;
+    border-bottom: 1px solid #dde1e5;
+    display:flex;
+    background-color: #fff;
+}
+
+#header > #menu > a {
+    display: inline-block;
+    padding: 18px 23px 21px;
+    color: #17171d;
+}
+
+#header > #menu > a > .menu1 {
+    font-size: 19px;
+    margin-left: -5px;
+}
+
+#header > #menu > a > .menuicon {
+    width: 18px;
+    height: 16px;
+    margin: 1px 11px 0 0 ;
+    display: inline-block;
+    background: url("https://rs.nxfs.nexon.com/gnb/images/set_gnb.png") 0 0 no-repeat;
+    background-color: #17191d;
+}
+
+
+#header > #menu > #jsmenu {
+    color: #07f;
+}
+
+#header > #menu > #jsmenu > .menuicon {
+    background-color: #07f;
+}
+
+#header > #logo {
+    margin:0 auto;
+    transform: translateX(30%);
+}
+
+#header > #pcbang {
+    height: 62px;
+    padding: 19px 5px 0 6px;
+}
+
+#header > #pcbang > .pcroom {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: #191919 url("//rs.nxfs.nexon.com/gnb/images/set_gnb_icon.png") 0 0 no-repeat;
+}
+
+#header > #join {
+    margin-right: 8px;
+}
+
+#header > #join > #jsjoin.on {
+    color: #07f;
+}
+
+#header > #join > a {
+    display: inline-block;
+    padding: 20px 3px 0;
+    color: #17191d;
+    font-size: 14px;
+}
+
+#header > #login1 {
+    display: inline-block;
+    padding-top: 13px;
+    padding-right: 28px;
+}
+
+#header > #login1 > a {
+    display: inline-block;
+    min-width: 85px;
+    height:36px;
+    padding: 7px 18px 0;
+    box-sizing: border-box;
+    color: #080410;
+    border-radius:19px;
+    border: 2px solid #17191d;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#header > #login1 > #jslogin.on {
+    background-color: #07f;
+    color: #fff;
+}
+
+/* side */
+
+#jssidebackground1 {
+    display: block;
+}
+
+.sideboxbackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 998;
+    opacity: 0.7;
+    display: none;
+}
+
+#jssidebox {
+    display: block;
+}
+
+.sidebox {
+    left: 0;
+    top: 0;
+    width: 440px;
+    height: 100%;
+    padding: 62px 0 195px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+
+.side {
+    min-height: 100%;
+    border-top: 1px solid #dde1e5;
+}
+
+.sidemenu {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -23px;
+    padding-top:62px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.sidegametab {
+    height: 75px;
+    padding-top: 27px;
+    box-sizing: border-box;
+}
+
+.sidegametab > ul {
+    display: inline-block;
+    width: 318px;
+    padding: 9px 0 0 42px;
+    box-sizing: border-box;
+}
+
+.sidegametab > ul > li {
+    display: inline-block;
+    height: 20px;
+    margin-right: 19px;
+}
+
+.sidegametab > ul > li.on {
+    border-bottom: 2px solid #17191d;
+    font-weight: bold;
+}
+
+.sidegametab > ul > li > a {
+    display: block;
+    height: 20px;
+    font-size: 12px;
+}
+
+.sidegametab > ul > li.on > a {
+    font-weight: bold;
+    color: #17191d;
+}
+
+.sidegametab > a {
+    display: inline-block;
+    width: 80px;
+    height: 32px;
+    padding-top:6px;
+    box-sizing: border-box;
+    color: #9fa1a7;
+    text-align: center;
+    font-weight: 700;
+    border: 2px solid #9fa1a7;
+}
+
+.sidepcgame {
+    display: flex;
+    padding: 75px 0 50px 42px;
+    box-sizing: border-box;
+    margin-top: -75px;
+    height: 100%;
+}
+
+.sidegame {
+    display: inline-block;
+    width: 188px;
+}
+
+.sidegame > h3 {
+    height: 50px;
+    padding-top:24px;
+    box-sizing: border-box;
+    color: #17191d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sidegame > ul > li {
+    padding-bottom: 8px;
+}
+
+.sidegame > ul > li > a {
+    letter-spacing: -.3px;
+}
+
+.sideservice {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 440px;
+    height: 195px;
+    background-color: #222426;
+}
+
+.sideservice > ul {
+    height:145px;
+    padding: 30px 0 0 33px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li:nth-child(2){
+    padding-left: 11px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li:nth-child(3){
+    padding-left: 7px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li:nth-child(5){
+    padding-left:11px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li:nth-child(6){
+    padding-left:7px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li:nth-child(8){
+    padding-left:11px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li:nth-child(9){
+    padding-left:7px;
+    box-sizing: border-box;
+}
+
+.sideservice > ul > li > a {
+    color: #fff;
+    display: flex;
+}
+
+.sideservice > a {
+    display: block;
+    width: 440px;
+    height: 50px;
+    padding-top: 17px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: -.3px;
+    color: #fff;
+    background-color: #17191d;
+}
+
+.sideservice > ul > li > a > span {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.sideicon1 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 0 no-repeat;
+}
+.sideicon2 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -50px no-repeat;
+}
+.sideicon3 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -100px no-repeat;
+}
+.sideicon4 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -150px no-repeat;
+}
+.sideicon5 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -200px no-repeat;
+}
+.sideicon6 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -400px no-repeat;
+}
+.sideicon7 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -300px no-repeat;
+}
+.sideicon8 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -350px no-repeat;
+}
+.sideicon9 {
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_service.png") 0 -250px no-repeat;
+}
+
+.sidebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sidebtn > a {
+    display: block;
+    width: 64px;
+    height: 64px;
+    padding: 23px;
+    box-sizing: border-box;
+}
+
+.sidebtn > a > .xbtn {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: transparent url("//rs.nxfs.nexon.com/gnb/images/set_gnb.png") 0 -50px no-repeat;
+    background-color: #17191d;
+}
+
+.sidebtn > a > .xbtn.on {
+    background-color: #07f;
+}
+
+/* visual */
+
+#mask {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#mask img {
+    max-width:100%;
+    display:block;
+    margin: 0 auto;
+}
+
+#visual {
+    display:inline-block;
+    white-space: nowrap;
+    font-size:0;
+}
+
+.visual1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+
+.visual2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+.visual3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+.visual4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+.visual5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+.visual6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+.visual7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background-color: rgba(0,0,0,.05);
+    z-index: 10;
+}
+
+.visual1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual5::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual6::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual7::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.8;
+    background-image: linear-gradient(0deg,#000,transparent 20.31%);
+}
+
+.visual1 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(51,126,195);
+}
+
+.visual2 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(219, 201, 182);
+}
+.visual3 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(0,0,0);
+}
+.visual4 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(38, 35, 55);
+}
+.visual5 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(14, 10, 47);
+}
+.visual6 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(35, 35, 35);;
+}
+.visual7 {
+    width: 100%;
+    height: 560px;
+    background-color: rgb(20, 14, 52);
+}
+
+#banner {
+    position: relative;
+    width: 1280px;
+    height: 80px;
+    margin: -80px auto 0;
+    overflow: hidden;
+}
+
+#banner > #slide {
+    width: 2565px;
+    height: 80px;
+    position: relative;
+}
+
+#slide > li {
+    display: inline-block;
+    width: 1280px;
+    height: 80px;
+}
+
+ #slide > li > .slidecontent {
+    position: relative;
+    float: left;
+    width: 254px;
+    height: 80px;
+    margin-right: 1.5px;
+    cursor: pointer;
+    opacity: 1;
+    background-color: transparent;
+    z-index: 100;
+    overflow: hidden;
+}
+ #slide > li > .slidecontent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    transition: all .5s;
+    background-color: #fff;
+    opacity: .1;
+}
+
+#slide > li > .slidecontent > #slidebackground {
+    position: absolute;
+    background-color: #07f;
+    width: 254px;
+    height: 80px;
+    right: 100%;
+}
+
+#slide > #slide1 {
+    position: absolute;
+    left: 0 ;
+}
+
+#slide > #slide2 {
+    position: absolute;
+    left: 50%;
+}
+
+.slidename, .eventname{
+    position: absolute;
+    left: 16px;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    text-align: left;
+    z-index: 10;
+}
+
+.slidename {
+    top: 15px;
+    width: 188px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    color: #fff;
+    opacity: .5;
+}
+
+.eventname {
+    top: 41px;
+    width: 223px;
+    font-size: 18px;
+    font-weight: Bold;
+    color: #fff;
+    opacity: .6;
+    transition: all .5s;
+    text-overflow: ellipsis;
+}
+
+#banner.on1 > #slide > #slide1 > .slidecontent > .slidebackground1 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on2 > #slide > #slide1 > .slidecontent > .slidebackground2 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on3 > #slide > #slide1 > .slidecontent > .slidebackground3 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on4 > #slide > #slide1 > .slidecontent > .slidebackground4 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on5 > #slide > #slide1 > .slidecontent > .slidebackground5 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on6 > #slide > #slide2 > .slidecontent > .slidebackground6 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on7 > #slide > #slide2 > .slidecontent > .slidebackground7 {
+    transform: translateX(100%);
+    transition: all 2s;
+}
+
+#banner.on1 > #slide > #slide1 > .slidecontent > #eventname1 {
+    opacity: 1;
+}
+
+#banner.on2 > #slide > #slide1 > .slidecontent > #eventname2 {
+    opacity: 1;
+}
+
+#banner.on3 > #slide > #slide1 > .slidecontent > #eventname3 {
+    opacity: 1;
+}
+
+#banner.on4 > #slide > #slide1 > .slidecontent > #eventname4 {
+    opacity: 1;
+}
+
+#banner.on5 > #slide > #slide1 > .slidecontent > #eventname5 {
+    opacity: 1;
+}
+
+#banner.on6 > #slide > #slide1 > .slidecontent > #eventname6 {
+    opacity: 1;
+}
+
+#banner.on7 > #slide > #slide1 > .slidecontent > #eventname7 {
+    opacity: 1;
+}
+
+#slide.on6 {
+    left: -100%;
+    transition: all .5s;
+}
+
+#slide.on7 {
+    left: -100%;
+}
+
+#button {
+    position: relative;
+    width: 1400px;
+    height: 80px;
+    margin:0 auto;
+    margin-top: -80px;
+}
+
+#button > .left {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_promotion.png") no-repeat 0 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#button > .right {
+    position: absolute;
+    top: 25px;
+    left: 1350px;
+    width: 30px;
+    height: 30px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_promotion.png") no-repeat 0 0;
+    background-position: -50px 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#slide.left {
+    left: 0;
+    transition: all 0.5s;
+}
+
+#slide.right {
+    right: 100%;
+    transition: all 0.5s;
+}
+
+#button > .left.on {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+#button > .right.on {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+#button.on1 > .left {
+    display: none;
+}
+#button.on2 > .left {
+    display: none;
+}
+#button.on3 > .left {
+    display: none;
+}
+#button.on4 > .left {
+    display: none;
+}
+#button.on5 > .left {
+    display: none;
+}
+#button.on6 > .right {
+    display: none;
+}
+#button.on7 > .right {
+    display: none;
+}
+
+/* 정렬 */
+
+#visual > li {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all 0.5;
+}
+
+/* animations */
+
+#visual.on1 {
+    transform: translateX(0);
+}
+#visual.on2 {
+    transform: translateX(-100%);
+}
+#visual.on3 {
+    transform: translateX(-200%);
+}
+#visual.on4 {
+    transform: translateX(-300%);
+}
+#visual.on5 {
+    transform: translateX(-400%);
+}
+#visual.on6 {
+    transform: translateX(-500%);
+}
+#visual.on7 {
+    transform: translateX(-600%);
+}
+
+/* pickgame */
+
+#pickgame {
+    position: relative;
+    width: 1280px;
+    height: 496px;
+    margin: 76px auto 0;
+}
+
+#pickgame > .title {
+    height:28px;
+}
+
+#pickgame > .title > h2 {
+    display: inline-block;
+    height: 28px;
+    color: #17191d;
+    font-size: 24px;
+}
+
+#pickgame > .sub {
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+#pickgame > .sub > a {
+    font-size:14px;
+    margin-left: 23px;
+    color: #17191d;
+    letter-spacing:-.4px;
+}
+
+#pickgame > .sub > #jssub1 {
+    color: #07f;
+}
+
+#pickgame > .game {
+    float:left;
+    width:805px;
+    height:342px;
+    margin-top: 30px;
+}
+
+#pickgame > .game > ul {
+    width: 100%;
+    height: 320px;
+}
+
+#pickgame > .game > ul > li {
+    position: relative;
+    float: left;
+    width: 153px;
+    height: 342px;
+    margin-right: 8px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.game1 {
+    display: block;
+    width: 153px;
+    height: 192px;
+    overflow: hidden;
+}
+
+.game1 > img {
+    display: block;
+    width: 153px;
+    height: 192px;
+}
+
+#pickgame > .game > #over.on1 > #mouseover1 > a > .game1 > img{
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+#pickgame > .game > #over.on1 > #mouseover1 > a > .game1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 153px;
+    height: 192px;
+    background-color: #000;
+    opacity: 0;
+}
+
+#pickgame > .game > #over.on1 > #mouseover1{
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+#pickgame > .game > #over.on2 > #mouseover2 > a > .game1 > img{
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+
+#pickgame > .game > #over.on2 > #mouseover2 > a > .game1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 153px;
+    height: 192px;
+    background-color: #000;
+    opacity: 0;
+}
+
+#pickgame > .game > #over.on2 > #mouseover2{
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+#pickgame > .game > #over.on3 > #mouseover3 > a > .game1 > img{
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+
+#pickgame > .game > #over.on3 > #mouseover3 > a > .game1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 153px;
+    height: 192px;
+    background-color: #000;
+    opacity: 0;
+}
+
+#pickgame > .game > #over.on3 > #mouseover3{
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+#pickgame > .game > #over.on4 > #mouseover4 > a > .game1 > img{
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+
+#pickgame > .game > #over.on4 > #mouseover4 > a > .game1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 153px;
+    height: 192px;
+    background-color: #000;
+    opacity: 0;
+}
+
+#pickgame > .game > #over.on4 > #mouseover4{
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+#pickgame > .game > #over.on5 > #mouseover5 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+    transition: all .35s;
+}
+    
+
+
+.game1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 153px;
+    height: 192px;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+
+.pick {
+    display: block;
+    width: 32px;
+    height: 16px;
+    padding-top: 3px;
+    margin: 16px 0 0 12px;
+    text-align: center;
+    color: #fff;
+    font-size:10px;
+    border-radius:20px;
+    background-color: #00dbd3;
+}
+
+.pick::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 153px;
+    height: 60px;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.6),transparent);
+}
+
+.gamename {
+    display: block;
+    width: 129px;
+    height: 40px;
+    margin: 8px 0 0 12px;
+    font-size: 14px;
+    color: #17191d;
+}
+
+.gamereason {
+    position: absolute;
+    top: 308px;
+    left: 12px;
+    display: block;
+    width: 129px;
+    color: #9fa1a7;
+    font-size:12px;
+}
+
+.play > .talk {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    top: 8px;
+    right: 8px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_playtalk.svg") no-repeat 0 0;
+}
+
+.play > #jstalk {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 28px;
+    top: 8px;
+    right: 8px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_playtalk.svg") no-repeat -50px 0;
+    opacity: 1;
+}
+
+.login2 {
+    float: left;
+    width:465px;
+    height: 342px;
+    padding: 70px 0 0 56px;
+    margin: 30px 0 0 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.nexon > a {
+    display: inline-block;
+    width: 353px;
+    height: 60px;
+    padding-top: 22px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #17191d;
+    font-size:15px;
+    color: #fff;
+}
+
+.nexon > #jslogin {
+    background-color: #07f
+}
+
+.nexon > a > .icon {
+    display: inline-block;
+    background-size: 100px auto;
+}
+
+.etc {
+    margin-top:8px;
+}
+
+.etc > a {
+    display: inline-block;
+    width: 176px;
+    height: 52px;
+    padding-top: 18px;
+    box-sizing: border-box;
+    margin-right: -4px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background-color: #4a4e57;
+}
+
+.etc > #jslogin {
+    background-color: #07f;
+}
+
+.tpa {
+    display: inline-block;
+    width: 353px;
+    height: 42px;
+    padding-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f8f9fa
+}
+
+.tpa > span {
+    display: inline-block;
+    padding-top:3px;
+    margin-right: 15px;
+    color: #9fa1a7;
+    letter-spacing:-.3px;
+}
+
+.tpa > a {
+    padding-right: 6px;
+}
+
+.tpa > a > img {
+    padding-top: 3px;
+}
+
+.find, .join  {
+    display: inline-block;
+    padding-top:14px;
+    letter-spacing:-.3px;
+    color:#737881;
+    font-size:12px;
+}
+
+.find {
+    width: 200px;
+}
+
+.find > a {
+    margin-right:16px;
+}
+
+.find > #jsfind {
+    color: #07f;
+}
+
+.join {
+    position: relative;
+    width: 153px;
+    text-align: right;
+}
+
+.join > #jsjoin {
+    color: #07f
+}
+
+.newgame {
+    clear: both;
+    width: 1328px;
+    padding-left: 24px;
+    margin: 0 auto;
+}
+
+.newgame > h2 {
+    color: #17191d;
+    font-size:24px;
+}
+
+.newgame > ul {
+    padding-top: 42px;
+    padding-bottom: 68px;
+    height: 308px;
+    box-sizing: border-box;
+}
+
+.newgame > ul > li {
+    position: relative;
+    float: left;
+    display: block;
+    width: 302px;
+    height: 146px;
+    margin: 0 24px 52px 0;
+    background-color: #fff;
+    border-top: 2px solid #07f;
+}
+
+.newgame > #jsnewgame.on1 > #jsnewgame1 > .newgame1 {
+    transition: all 0.5s;
+    background-color: #07f
+}
+
+.newgame > #jsnewgame.on1 > #jsnewgame1 > .newgame1 > a > .gamestate > span {
+    transition: all 0.5s;
+    color: #07f;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.newgame > #jsnewgame.on1 > #jsnewgame1 > .newgame1 > a > .gameinfo > .gameName > span {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #07f;
+}
+
+.newgame > #jsnewgame.on1 > #jsnewgame1 > .newgame1 > a > .gameinfo > .gameDevice {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #07f;
+}
+
+.newgame > #jsnewgame.on1 > #jsnewgame1 > .newgame1 > a > .gamePeriod {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #07f;
+}
+
+.newgame > #jsnewgame.on2 > #jsnewgame2 > .newgame1 {
+    transition: all 0.5s;
+    background-color: #07f
+}
+
+.newgame > #jsnewgame.on2 > #jsnewgame2 > .newgame1 > a > .gamestate > span {
+    transition: all 0.5s;
+    color: #07f;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+.newgame > #jsnewgame.on2 > #jsnewgame2 > .newgame1 > a > .gameinfo > .gameName > span {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #07f;
+}
+
+.newgame > #jsnewgame.on2 > #jsnewgame2 > .newgame1 > a > .gameinfo > .gameDevice {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #07f;
+}
+
+.newgame > #jsnewgame.on2 > #jsnewgame2 > .newgame1 > a > .gamePeriod {
+    transition: all 0.5s;
+    color: #fff;
+    background-color: #07f;
+}
+
+.newgame > ul > li > .newgame1 {
+    display: block;
+    height: 146px;
+    width: 302px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.gamestate {
+    top: 22px;
+    left: 20px;
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+.gamestate > span {
+    display: inline-block;
+    height: 16px;
+    padding: 1px 5px 0;
+    box-sizing: border-box;
+    margin-right: 4px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -.25px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: #07f;
+    border: 1px solid #07f;
+}
+
+.gameimg {
+    position: absolute;
+    top: -34px;
+    right: 0;
+    display: block;
+    z-index: 1;
+}
+
+.gameimg > img {
+    width: 140px;
+    height: 180px;
+}
+
+.gameinfo {
+    position: absolute;
+    top: 49px;
+    left: 20px;
+    z-index: 10;
+}
+
+.gameName {
+    display: block;
+    padding-bottom: 4px;
+    padding-right: 20px;
+}
+
+.gameName > span {
+    display: inline;
+    padding: 2px 6px 0 0;
+    font-size: 16px;
+    font-weight:bold;
+    line-height: 1.25;
+    color: #17191d;
+    background-color: #fff;
+}
+
+.gameDevice {
+    display: inline-block;
+    height: 20px;
+    padding-right: 6px;
+    color: #9fa1a7;
+    background-color: #fff;
+}
+
+.gameDevice > .logo {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-right: 3px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_device.png") no-repeat 0 0;
+}
+
+.gameGenre {
+    display: inline-block;
+    padding-top: 2px;
+    margin-left: 1px;
+    letter-spacing: -.3px;
+    text-transform: uppercase;
+    font-size:12px;
+    transform: translateY(-30%);
+}
+
+.gameDevice > span > img {
+    margin-right: 3px;
+}
+
+.gamePeriod {
+    position: absolute;
+    top: 120px;
+    left: 16px;
+    height: 17px;
+    max-width: 90%;
+    padding: 0 5px;
+    color: #737881;
+    background-color: #fff;
+    letter-spacing: -.3px;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 12px malgun gothic,"sans serif";
+}
+
+.allgame {
+    position: relative;
+    width: 1328px;
+    padding-left : 24px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.allgame > .viewtype {
+    position: absolute;
+    top: 0;
+    left: 127px;
+    width: 52px;
+    display: flex;
+}
+
+.allgame > .viewtype > .icon1 {
+    width: 26px;
+    height: 26px;
+    background: #c7c8cc url("https://rs.nxfs.nexon.com/home/images/main/set_main.svg") no-repeat 0px -400px;
+    transform: translateY(15%);
+    cursor: pointer;
+}
+
+.allgame > .viewtype > .icon2 {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #c7c8cc url("https://rs.nxfs.nexon.com/home/images/main/set_main.svg") no-repeat 0px -350px;
+    transform: translateY(15%);
+    cursor: pointer;
+}
+
+.allgame > .viewtype > #jssearch {
+    background-color: #07f;
+}
+
+.allgame > h2 {
+    height: 28px;
+    color: #17191d;
+    font-size:24px;
+}
+
+.allgame > .search {
+    position: absolute;
+    top: -10px;
+    right: 24px;
+}
+
+.allgame > .search > input {
+    width: 302px;
+    height: 44px;
+    padding: 0 3px;
+    margin-right: 0;
+    letter-spacing: -.3px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #dde1e5;
+    box-sizing: border-box;
+}
+
+.btn {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    
+}
+
+.btn > .icon3 {
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    background: #17191d  url("https://rs.nxfs.nexon.com/home/images/main/set_main.svg") no-repeat -1px -301px;
+    cursor: pointer;
+}
+
+.search > .btn > #jssearch {
+    background-color:#07f;
+}
+
+.filter {
+    position: relative;
+    padding: 20px 30px 3px;
+    margin: 29px 24px 20px 0;
+    background-color: #fff;
+}
+
+.filter > .platform {
+    border: 0;
+}
+
+.filter > .platform > span {
+    display: inline-block;
+    margin: 0 16px 17px 0;
+}
+
+.filter > .platform > span > input {
+    display:none;
+}
+
+.filter input+label {
+    display: block;
+    height: 21px;
+    padding: 1px 10px 0;
+    box-sizing: border-box;
+    letter-spacing: -0.3;
+    text-transform: uppercase;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.filter input:checked+label {
+    color: #fff;
+    border: 1px solid #17191d;
+    background-color: #17191d;
+}
+
+.filter > .platform > span > #jsplatform {
+    color: #07f;
+}
+
+.allgame > h3 {
+    height: 78px;
+    padding-top: 40px;
+    color: #4a4e57;
+    font-size: 20px;
+    margin-bottom: -40px
+}
+
+.allgame > h3 > a {
+    margin-left: 22px;
+    color: #c7c8cc;
+}
+
+.allgame > h3 > #jsmobilegame {
+    color: #07f;
+    transition: all 0.6s;
+}
+
+.allgame > ul > li {
+    float: left;
+    display: block;
+    width: 302px;
+}
+
+.allgame > ul {
+    padding: 15px 0 40px;
+    width: 1304px;
+    height: 3420px;
+}
+
+.allgame > #pcview > li {
+    height: 320px;
+    margin: 0 24px 60px 0;
+}
+
+.allgame > #pcview > li > .game {
+    position: relative;
+    height: 320px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.allgame > #pcview > li > .game > .pcviewimg {
+    position: relative;
+    display: block;
+    width: 302px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.allgame > #pcview > li > .game > .pcviewimg::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 302px;
+    height: 200px;
+    background-color: #000;
+    opacity: 0.1;
+}
+
+.allgame > #pcview > li > .game > .pcviewname {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+}
+
+.allgame > #pcview > li > .game > .pcviewname > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 224px;
+    box-sizing: border-box;
+    color: #17191d;
+}
+
+.allgame > #pcview > li > .game > .pcviewname > a > span {
+    display: block;
+    width: 262px;
+    padding-right: 24px;
+    box-sizing: border-box;
+    height: 26px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.allgame > #pcview > li > .game > .gameintro {
+    display: block;
+    width: 262px;
+    height: 32px;
+    margin: 50px auto 0;
+    color: #737881;
+    letter-spacing: -.3px;
+    border-bottom: 1px solid #f2f5f8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.allgame > #pcview > li > .game > .gameintro > .event {
+    color: #07f;
+    font-weight: bold;
+}
+
+.allgame > #pcview > li > .game > .gamedeco {
+    display: table;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.allgame > #pcview > li > .game > .gamedeco > .gamedevice {
+    padding-left: 20px;
+}
+
+.allgame > #pcview > li > .game > .gamedeco > .gamedevice > .PC {
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin-right: 3px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_device.png") no-repeat 0 0;
+}
+
+.allgame > #pcview > li > .game > .gamedeco > .gamedevice > .gmaegnere {
+    display: inline-block;
+    padding-top: 2px;
+    color: #9fa1a7;
+    margin-left: -2px;
+    transform: translateY(-30%);
+}
+
+.allgame > #pcview.on0 > #jspcview > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on0 > #jspcview {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on0 > #jspcview > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on1 > #jspcview2 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on1 > #jspcview2 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on1 > #jspcview2 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on2 > #jspcview3 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on2 > #jspcview3 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on2 > #jspcview3 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on3 > #jspcview4 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on3 > #jspcview4 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on3 > #jspcview4 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on4 > #jspcview5 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on4 > #jspcview5 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on4 > #jspcview5 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on5 > #jspcview6 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on5 > #jspcview6 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on5 > #jspcview6 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on6 > #jspcview7 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on6 > #jspcview7 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on6 > #jspcview7 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on7 > #jspcview8 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on7 > #jspcview8 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on7 > #jspcview8 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on8 > #jspcview9 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on8 > #jspcview9 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on8 > #jspcview9 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on9 > #jspcview10 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on9 > #jspcview10 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on9 > #jspcview10 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on10 > #jspcview11 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on10 > #jspcview11 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on10 > #jspcview11 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on11 > #jspcview12 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on11 > #jspcview12 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on11 > #jspcview12 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on12 > #jspcview13 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on12 > #jspcview13 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on12 > #jspcview13 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on13 > #jspcview14 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on13 > #jspcview14 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on13 > #jspcview14 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on14 > #jspcview15 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on14 > #jspcview15 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on14 > #jspcview15 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on15 > #jspcview16 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on15 > #jspcview16 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on15 > #jspcview16 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on16 > #jspcview17 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on16 > #jspcview17 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on16 > #jspcview17 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on17 > #jspcview18 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on17 > #jspcview18 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on17 > #jspcview18 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview18 > #jspcview19 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on18 > #jspcview19 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on18 > #jspcview19 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on19 > #jspcview20 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on19 > #jspcview20 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on19 > #jspcview20 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on20 > #jspcview21 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on20 > #jspcview21 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on20 > #jspcview21 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on21 > #jspcview22 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on21 > #jspcview22 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on21 > #jspcview22 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on22 > #jspcview23 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on22 > #jspcview23 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on22 > #jspcview23 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on23 > #jspcview24 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on23 > #jspcview24 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on23 > #jspcview24 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on24 > #jspcview25 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on24 > #jspcview25 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on24 > #jspcview25 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on25 > #jspcview26 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on25 > #jspcview26 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on25 > #jspcview26 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on26 > #jspcview27 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on26 > #jspcview27 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on26 > #jspcview27 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on27 > #jspcview28 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on27 > #jspcview28 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on27 > #jspcview28 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on28 > #jspcview29 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on28 > #jspcview29 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on28 > #jspcview29 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on29 > #jspcview30 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on29 > #jspcview30 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on29 > #jspcview30 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on30 > #jspcview31 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on30 > #jspcview31 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on30 > #jspcview31 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on31 > #jspcview32 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on31 > #jspcview32 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on31 > #jspcview32 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > #pcview.on32 > #jspcview33 > .game > .pcviewimg > img {
+    transform: scale(1.1);
+    transition: all .35s;
+}
+
+.allgame > #pcview.on32 > #jspcview33 {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+}
+
+.allgame > #pcview.on32 > #jspcview33 > .game > .pcviewimg::after {
+    background-color: #000;
+    opacity: 0;
+}
+
+.allgame > .community {
+    height: 33px;
+    padding-right: 25px;
+    margin-top: -33px;
+    text-align: right;
+}
+
+.allgame > .community > a {
+    line-height: 1.4;
+    letter-spacing: -.35px;
+    text-align: left;
+    color: #17191d;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.allgame > .community > #jscommunity {
+    color: #07f;
+}
+
+.allgame > .community > #jscommunity > span {
+    background-position: -50px -250px;
+}
+
+.allgame > .community > a > .mobileicon {
+    position: relative;
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_community.svg") no-repeat 0 -250px;
+    margin-top:5px;
+}
+
+.allgame > .mobileview {
+    padding: 15px 0 10px;
+    width: 1304px;
+    height: 625px;
+    box-sizing: border-box;
+}
+
+.allgame > .mobileview > li {
+    height: 120px;
+    margin: 0 24px 30px 0;
+}
+
+.allgame > .mobileview > li.on {
+    box-shadow: 1.2px 1.2px 10px 10px rgba(48,49,51,6%);
+    transition: all .5s;
+}
+
+.allgame > .mobileview > li > .game {
+    height: 120px;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 302px;
+}
+
+.allgame > .mobileview > li > .game > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 120px;
+    padding: 19px 39px 0 117px;
+    box-sizing: border-box;
+}
+
+.allgame > .mobileview > li > .game > a > .mobileviewimg {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+}
+
+.allgame > .mobileview > li > .game > a > .mobileviewimg > img {
+    width: 86px;
+    height: 86px;
+    border-radius: 18px;
+}
+
+.allgame > .mobileview > li > .game > a > .mobileviewname {
+    color: #17191d;
+    letter-spacing: -.3px;
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.allgame > .mobileview > li > .game > a > .gameintro {
+    padding-left: 4px;
+}
+
+.allgame > .mobileview > li > .game > a > .gameintro > .event {
+    color: #07f;
+    font-weight: 700;
+}
+
+.allgame > .mobileview > li > .game > a > .gameintro2 > .event2 {
+    color: #07f;
+    font-weight: bold;
+}
+
+.allgame > .mobileview > li > .game > a > .gamegnere {
+    display: block;
+    padding-top: 1px;
+}
+
+.allgame > .mobileview > li > .game > .gamedeco {
+    position: absolute;
+    width: 173px;
+    height: 20px;
+    left: 115px;
+    bottom: 15px;
+    margin-top: 7px;
+}
+
+.allgame > .mobileview > li > .game > .gamedeco > .mobilegamestate1 {
+    display: inline-block;
+    height: 16px;
+    padding: 1px 5px 0;
+    box-sizing: border-box;
+    transform: translateY(-40%);
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 8px;
+    background-color: #9299ac;
+    border: 1px solid #9299ac;
+
+}
+
+.allgame > .mobileview > li > .game > .gamedeco > .mobilegamestate2 {
+    display: inline-block;
+    height: 16px;
+    padding: 1px 5px 0;
+    box-sizing: border-box;
+    transform: translateY(-40%);
+    color: #fff;
+    line-height: 12px;
+    border-radius: 8px;
+    background-color: #ff6060;
+    border: 1px solid #ff6060;
+}
+
+.allgame > .mobileview > li > .game > .gamedeco > .mobilegamestate3 {
+    display: inline-block;
+    height: 16px;
+    padding: 1px 5px 0;
+    box-sizing: border-box;
+    transform: translateY(-40%);
+    color: #fff;
+    line-height: 12px;
+    border-radius: 8px;
+    background-color: #2be283;
+    border: 1px solid #2be283;
+}
+
+.allgame > .mobileview > li > .game > .gamedeco > .gamecommunite {
+    position: absolute;
+    top: -69px;
+    right: 2px;
+}
+
+.allgame > .mobileview > li > .game > .gamedeco > .gamecommunite1 > img {
+    position: absolute;
+    top: -69px;
+    right: 2px;
+    transform: translateY(20%);
+}
+
+.allgame > .mobileview > li > .game > .gamedeco > .gamecommunite2 > img {
+    position: absolute;
+    top: -69px;
+    right: 2px;
+    transform: translateY(50%);
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 278px;
+    margin-top: 200px;
+    text-align: left;
+    background: #222426;
+}
+
+.footer > .sns {
+    position: absolute;
+    top:25px;
+    right: 38px;
+}
+
+.footer > .sns > li {
+    display: inline-block;
+    padding-left: 1px;
+}
+
+.footer > .sns > li > a {
+    display: block;
+    padding: 3px;
+    width: 19px;
+    height: 19px;
+}
+
+.footer > .sns > li > a > .sns1 {
+    display: inline-block;
+    width:19px;
+    height: 19px;
+    background: #fff url("https://rs.nxfs.nexon.com/home/images/main/set_footer.png") no-repeat 0 0;
+    background-position: 0 -50px;
+}
+
+.footer > .sns > li > a > .sns2 {
+    display: inline-block;
+    width:18px;
+    height: 19px;
+    background: #fff url("https://rs.nxfs.nexon.com/home/images/main/set_footer.png") no-repeat 0 0;
+    background-position: 0 -100px;
+}
+
+.footer > .sns > li > a > .sns3 {
+    display: inline-block;
+    width:9px;
+    height: 19px;
+    background: #fff url("https://rs.nxfs.nexon.com/home/images/main/set_footer.png") no-repeat 0 0;
+    background-position: 0 -150px;
+}
+
+.footer > .sns > #jssns > a > .sns1 {
+    background-color: #07f;
+}
+
+.footer > .sns > #jssns > a > .sns2 {
+    background-color: #07f;
+}
+
+.footer > .sns > #jssns > a > .sns3 {
+    background-color: #07f;
+}
+
+
+.footer > .notice {
+    height: 73px;
+    padding: 28px 0 0 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1)
+}
+
+.footer > .notice > #jsnotice {
+    text-decoration: underline;
+}
+
+.footer > .notice > a {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: -.3px;
+}
+
+.footer > .nav {
+    padding: 31px 96px 0 40px;
+}
+
+.footer > .nav > li {
+    display: inline-block;
+}
+
+.footer > .nav > li > a {
+    color: rgba(248, 249, 250, .7);
+    letter-spacing: -.8px;
+}
+
+.footer > .nav > li > #jsnav {
+    color: #07f;
+}
+
+.footer > .nav > .n1::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    margin: 2px 12px 0;
+    background-color: hsla(0,0%,100%,.2);
+}
+
+.footer > .nav+.nav {
+    padding: 14px 96px 13px 40px;
+}
+
+.footer > .language {
+    position: absolute;
+    top: 85px;
+    right: 40px;
+    text-transform: uppercase;
+}
+
+.footer > #jslanguagelist > .languagelist {
+    display: block;
+    transition: all 0.5s;
+}
+
+.footer > .language > h3 > a {
+    background-color: #393a3c;
+    display: block;
+    width: 140px;
+    height: 34px;
+    padding: 9px 0 0 14px;
+    box-sizing: border-box;
+    letter-spacing: -.3px;
+    color: rgba(248, 249, 250, .8);
+}
+
+.footer > .language > #jskorea > a  {
+    color: #07f;
+}
+
+.footer > .language > #jskorea > a > .icon {
+    background-color: #07f;
+}
+
+.footer > .language > .languagelist {
+    position: absolute;
+    display: none;
+    bottom: 35px;
+    right: 0;
+    background-color: #17191d;
+}
+
+.footer > .language > #languagelist > .languagelist {
+    display: block;
+}
+
+.footer > .language > .languagelist > li {
+    width: 140px;
+    height: 34px;
+    padding: 9px 0 0 14px;
+    box-sizing: border-box;
+    letter-spacing: -.3px;
+    color: rgba(248, 249, 250, .8);
+}
+
+.footer > .language > .languagelist > #jsglobal > a {
+    color: #07f;
+}
+
+.footer > .language > .languagelist > li > a {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(248, 249, 250, .8);
+}
+
+.footer > .language > h3 > a > .text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer > .language > h3 > a > .icon {
+    position: absolute;
+    top: 8px;
+    right: 11px;
+    width: 18px;
+    height: 18px;
+    border-top: 1px solid #393a3c;
+    background-color: #fff;
+}
+
+.footer > .address {
+    padding: 16px 96px 0 40px;
+    color: rgba(248,249,250,.3);
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: -.3px;
+    font-style: normal;
+}
+
+.footer > .address > a {
+    color: rgba(248, 249, 250, .3);
+    text-decoration: underline;
+}
+
+.footer > .copyright {
+    padding: 0 0 0 40px;
+    color: rgba(248,249,250,.3);
+    font-size: 11px;
+    line-height: 18px;
+    letter-spacing: -.3px;
+}
+
+.footer > .logo {
+    height: 83px;
+    padding: 21px 0 0 39px;
+    box-sizing: border-box;
+}
+
+.footer > .logo > .icon {
+    width: 68px;
+    height: 23px;
+}
+
+#layout1 {
+    position: fixed;
+    right: 146px;
+    bottom: 336px;
+}
+
+#layout > #layout1.on {
+    position: fixed;
+    bottom: 20px;
+}
+
+#layout > #layout1 > a {
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    padding: 8px 0 0 7px;
+    box-sizing: border-box;
+    color: #9fa1a7;
+    background-color: #fff;
+    border: 2px solid #fff;
+    display: flex;
+    cursor: pointer;
+    bottom: 336px;
+}
+
+#layout > #layout1 > a > .icon {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin: -1px 5px 0 0;
+}
+
+#layout > #layout1 > .pcgame {
+    bottom: 82px;
+}
+
+#layout > #layout1 > .pcgame > .icon {
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_floating.png") no-repeat 0 -100px;
+}
+
+#layout > #layout1 > .mobilegame {
+    bottom: 44px;
+}
+
+#layout > #layout1 > .mobilegame > .icon {
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_floating.png") no-repeat 0 -200px;
+}
+
+#layout > #layout1 > .top {
+    bottom: 0px;
+    background-color: #f8f9fa;
+    border: 2px solid #9fa1a7;
+}
+
+#layout > #layout1 > .top > .icon {
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_floating.png") no-repeat 0 0;
+}
+
+#layout > #layout1 > .ucc {
+    bottom: 134px;
+}
+
+#layout > #layout1 > .ucc > .icon {
+    background: url("https://rs.nxfs.nexon.com/home/images/main/set_floating.png") no-repeat 0 -300px;
+}
+
+#layout > #layout1 > .ucc > .hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 8px;
+    opacity: 0;
+}
+
+#layout > #layout1 > .pcgame.on {
+    background-color: #07f;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+#layout > #layout1 > .pcgame.on > .icon{
+    background-position: 0 -150px;
+}
+
+#layout > #layout1 > .mobilegame.on {
+    background-color: #07f;
+    color: #fff;
+    transition: all 0.2s;
+}
+
+#layout > #layout1 > .mobilegame.on > .icon{
+    background-position: 0 -250px;
+}
+
+#layout > #layout1 > .top.on {
+    border-color: #07f;
+    color: #07f;
+    transition: all 0.2s;
+}
+
+#layout > #layout1 > .top.on > .icon {
+    background-position: 0 -50px;
+}
+
+#layout > #layout1 > .ucc.on > .icon {
+    display: none;
+}
+
+#layout > #layout1 > .ucc.on > .text {
+    opacity: 0;
+}
+
+#layout > #layout1 > .ucc.on > .hidden {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#layout.none > #layout1 > .pcgame {
+    display:none;
+}
+
+#layout.none > #layout1 > .mobilegame {
+    display:none;
+}
+
+#layout.none > #layout1 > .top {
+    display:none;
+}
+
+#layout.none > #layout1 > .ucc {
+    position: fixed;
+    bottom: 20px;
+}
